@@ -1,0 +1,6 @@
+1.
+SELECT Last_Name, Department_Id, DEPARTMENT_Id from employees
+2.
+SELECT last_name , JOB_Id,Hire_Date AS START_OF_DATE FROM employees WHERE Hire_Date BETWEEN '1998-02-20' AND '1998-05-01'
+3.
+SELECT e.Last_Name as "Last Name",e.Salary/4.34 as "weekly salary" FROM employees e 
