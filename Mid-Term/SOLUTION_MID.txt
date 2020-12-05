@@ -1,0 +1,241 @@
+
+
+
+
+Student_data
+
+CREATE TABLE Student_data (
+    snum decimal (9,0) PRIMARY KEY,
+    sname varchar (30),
+    major varchar (25),
+    level varchar (2),
+    age decimal (3,0)
+);
+
+Department_data
+
+CREATE TABLE Department_data (
+    fid decimal (9,0) PRIMARY KEY ,
+    fname varchar (30),
+    deptid decimal (2,0)
+    
+    
+    
+    );
+
+
+Class_data
+
+CREATE TABLE Class_data (
+    name VARCHAR (40) PRIMARY KEY,
+    meets_at VARCHAR (20),
+    room VARCHAR (10),
+    fid decimal (9,0)
+    );
+
+Course_data
+
+CREATE TABLE Stock_data (
+    sid int (9),
+    pid int (9),
+    cost int (10),
+    primary key(sid,pid)
+    );
+
+ Goodies_data
+
+CREATE TABLE Goodies_data (
+    pid int(9) PRIMARY KEY,
+    pname VARCHAR (40),
+    color VARCHAR (15)
+    
+    
+    );
+
+
+Provider_data
+
+CREATE TABLE Provider_data (
+    sid int (9) PRIMARY KEY,
+    sname VARCHAR (30),
+    address VARCHAR (40)
+    
+    );
+
+CREATE TABLE Course_data (
+    
+    snum decimal(9,0),
+    cname VARCHAR (40),
+    primary key(snum,cname)
+    );
+
+
+
+INSERT INTO class_data
+(name,meets_at,room,fid)
+
+VALUES
+('Data Structures','MWF 10','R128',489456522),
+
+('Database Systems','MWF 12:30-1:45','1320 DCL',142519864),
+
+('Operating System Design','TuTh 12-1:20','20 AVW',489456522), 
+
+('Archaeology of the Incas','MWF 3-4:15','R128',248965255),
+
+('Aviation Accident Investigation','TuTh 1-2:50','Q3',011564812),
+('Air Quality Engineering','TuTh 10:30-11:45','R15',011564812),
+
+('Introductory Latin','MWF 3-4:15','R12',248965255),
+
+('American Political Parties','TuTh 2-3:15','20 AVW',619023588);
+
+('Social Cognition','Tu 6:30-8:40','R15',159542516),
+
+('Perception','MTuWTh 3','Q3',489221823),
+
+('Multivariate Analysis','TuTh 2-3:15','R15',090873519),
+
+('Patent Law','F 1-2:50','R128',090873519),
+
+('Urban Economics','MWF 11','20 AVW',489221823),
+
+('Organic Chemistry','TuTh 12:30-1:45','R12',489221823),
+
+('Marketing Research','MW 10-11:15','1320 DCL',489221823),
+
+('Seminar in American Art','M 4','R15',489221823),
+
+('Orbital Mechanics','MWF 8','1320 DCL',011564812),
+
+('Dairy Herd Management','TuTh 12:30-1:45','R128',356187925);
+
+('Communication Networks','MW 9:30-10:45','20 AVW',141582651);
+
+('Optical Electronics','TuTh 12:30-1:45','R15',254099823);
+
+('Intoduction to Math','TuTh 8-9:30','R128',489221823);
+
+
+
+INSERT INTO department_data(
+(fid,fname,deptid)
+VALUES
+(142519864,'Ivana Teach',20),
+
+(242518965,'James Smith',68),
+
+(141582651,'Mary Johnson',20),
+
+(011564812,'John Williams',68),
+
+(254099823,'Patricia Jones',68),
+
+(356187925,'Robert Brown',12),
+
+(489456522,'Linda Davis',20),
+
+(287321212,'Michael Miller',12),
+
+(248965255,'Barbara Wilson',12),
+
+(159542516,'William Moore',33),
+
+(090873519,'Elizabeth Taylor',11),
+
+(486512566,'David Anderson',20),
+
+(619023588,'Jennifer Thomas',11),
+(489221823,'Richard Jackson',33),
+(548977562,'Ulysses Teach',20);
+
+
+INSERT INTO course_data(snum,cname)
+
+VALUES
+(112348546,'Database Systems'),
+
+(115987938,'Database Systems'),
+
+(348121549,'Database Systems'),
+
+(322654189,'Database Systems'),
+
+(552455318,'Database Systems'),
+
+(455798411,'Operating System Design'),
+
+(552455318,'Operating System Design'),
+
+(567354612,'Operating System Design'),
+
+(112348546,'Operating System Design'),
+
+(115987938,'Operating System Design'),
+
+(322654189,'Operating System Design'),
+
+(567354612,'Data Structures'),
+
+(552455318,'Communication Networks'),
+
+(455798411,'Optical Electronics'),
+
+(301221823,'Perception'),
+
+(301221823,'Social Cognition'),
+(301221823,'American Political Parties'),
+
+(556784565,'Air Quality Engineering'),
+
+(099354543,'Patent Law'),
+
+(574489456,'Urban Economics');
+
+
+
+
+INSERT INTO provider_data
+(sid,sname,address)
+
+VALUES
+
+(1,'Acme Widget Suppliers','1 Grub St.', 'Potemkin Village', 'IL 61801'),
+
+(2,'Big Red Tool and Die','4 My Way', 'Bermuda Shorts', 'OR 90305'),
+
+(3,'Perfunctory Parts','99999 Short Pier', 'Terra Del Fuego', 'TX 41299'),
+
+(4,'Alien Aircaft Inc.','2 Groom Lake', 'Rachel', 'NV 51902');
+
+
+INSERT INTO provider_data
+(sid,sname,address)
+
+VALUES
+
+(1,'Acme Widget Suppliers','1 Grub St.', 'Potemkin Village', 'IL 61801'),
+
+(2,'Big Red Tool and Die','4 My Way', 'Bermuda Shorts', 'OR 90305'),
+
+(3,'Perfunctory Parts','99999 Short Pier', 'Terra Del Fuego', 'TX 41299'),
+
+(4,'Alien Aircaft Inc.','2 Groom Lake', 'Rachel', 'NV 51902');
+
+
+INSERT INTO Goodies_data
+(pid,pname,color)
+
+VALUES
+(1,'Left Handed Bacon Stretcher Cover',Red),
+(2,'Smoke Shifter End','Black'),
+(3,'Acme Widget Washer','Red')
+4,Acme Widget Washer,Silver
+5,I Brake for Crop Circles Sticker,Translucent
+6,Anti-Gravity Turbine Generator,Cyan
+7,Anti-Gravity Turbine Generator,Magenta
+8,Fire Hydrant Cap,Red
+9,7 Segment Display,Green
+
+
+
