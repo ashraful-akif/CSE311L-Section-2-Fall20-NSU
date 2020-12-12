@@ -1,0 +1,13 @@
+3.
+
+SELECT last_name, salary
+	FROM employees
+	WHERE manager_id = (SELECT employee_id
+			    FROM employees
+			    WHERE last_name = 'King');
+
+
+4.
+
+SELECT employee_id, last_name , salary FROM employees WHERE salary > (SELECT AVG (salary) FROM employees ) AND  department_id IN ( SELECT department_id FROM employees  
+WHERE first_name LIKE '%u%');
