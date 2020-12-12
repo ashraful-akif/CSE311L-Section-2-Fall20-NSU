@@ -10,7 +10,7 @@ SELECT last_name, hire_date
 
 2. 
 
-SELECT employee_id, last_name
+SELECT employee_id, last_name, salary
 	FROM employees
 	WHERE salary > (SELECT AVG(salary)
 			FROM employees)
